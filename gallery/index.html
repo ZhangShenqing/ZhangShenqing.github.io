@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="张慎卿 • Zhang Shenqing">
+
+
+
+
+
+<title>相册｜Gallery | 慎卿的林中酒吧 | Scribe&#39;s Tarven</title>
+
+
+
+    <link rel="icon" href="/img/favicon.png">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="stylesheet" href="/%3Clink%20href=%22https:/cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css%22%20rel=%22stylesheet%22%3E">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="/%3Cscript%20src=%22https:/code.jquery.com/jquery-3.7.1.min.js%22%20integrity=%22sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=%22%20crossorigin=%22anonymous%22%3E%3C/script%3E"></script>
+    
+    <script src="/%3Cscript%20src=%22https:/cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js%22%3E%3C/script%3E"></script>
+    
+    <script src="/js/gallery.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">慎卿的林中酒馆 • Scribe&#39;s Tavern</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">博文｜Posts</a>
+                
+                    <a class="menu-item" href="/project">项目｜Projects</a>
+                
+                    <a class="menu-item" href="/gallery">相册｜Gallery</a>
+                
+                    <a class="menu-item" href="/about">关于我｜About me</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">慎卿的林中酒馆 • Scribe&#39;s Tavern</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">博文｜Posts</a>
+                
+                    <a class="menu-item" href="/project">项目｜Projects</a>
+                
+                    <a class="menu-item" href="/gallery">相册｜Gallery</a>
+                
+                    <a class="menu-item" href="/about">关于我｜About me</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                
+<div class="container">
+    <article class="post-wrap page">
+        
+        <h2 class="post-title">相册｜Gallery</h2>
+        
+        <section class="post-content">
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"></div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>
+        </section>
+    </article>
+</div>
+
+<section class="gallery-albums">
+  
+    
+      <article class="gallery-album" data-album="0">
+        <div class="gallery-album-cover">
+          <img src="https://s2.loli.net/2024/08/14/eyMqBtAoQW42ciR.jpg" alt="库尔勒 • Korla" loading="lazy">
+        </div>
+        <h2 class="gallery-album-title">库尔勒 • Korla</h2>
+      </article>
+    
+      <article class="gallery-album" data-album="1">
+        <div class="gallery-album-cover">
+          <img src="https://s2.loli.net/2024/08/14/sZ5wKtRJfQbLAYU.jpg" alt="布诺屯 • Blono" loading="lazy">
+        </div>
+        <h2 class="gallery-album-title">布诺屯 • Blono</h2>
+      </article>
+    
+      <article class="gallery-album" data-album="2">
+        <div class="gallery-album-cover">
+          <img src="https://s2.loli.net/2024/08/14/BW1xLzYiGXnFmAq.jpg" alt="港澳 • China Pros" loading="lazy">
+        </div>
+        <h2 class="gallery-album-title">港澳 • China Pros</h2>
+      </article>
+    
+      <article class="gallery-album" data-album="3">
+        <div class="gallery-album-cover">
+          <img src="https://s2.loli.net/2024/08/14/nqS3CAOUjEKluRY.jpg" alt="匹兹堡 • Pittsburgh" loading="lazy">
+        </div>
+        <h2 class="gallery-album-title">匹兹堡 • Pittsburgh</h2>
+      </article>
+    
+      <article class="gallery-album" data-album="4">
+        <div class="gallery-album-cover">
+          <img src="https://s2.loli.net/2024/08/14/uMd3DtmFYZEgWae.jpg" alt="芝加哥 • Chicago" loading="lazy">
+        </div>
+        <h2 class="gallery-album-title">芝加哥 • Chicago</h2>
+      </article>
+    
+  
+</section>
+
+<section class="gallery-container">
+  
+    
+      <div class="gallery-content" id="album-0" style="display: none;">
+        <h2 class="gallery-content-title">库尔勒 • Korla</h2>
+        <div class="gallery-waterfall" aria-label="Photo gallery"></div>
+        <div class="loading-indicator" style="display: none;" aria-hidden="true">
+          <div class="loading-spinner"></div>
+        </div>
+        <button class="load-more-btn" style="display: none;">Load More</button>
+      </div>
+    
+      <div class="gallery-content" id="album-1" style="display: none;">
+        <h2 class="gallery-content-title">布诺屯 • Blono</h2>
+        <div class="gallery-waterfall" aria-label="Photo gallery"></div>
+        <div class="loading-indicator" style="display: none;" aria-hidden="true">
+          <div class="loading-spinner"></div>
+        </div>
+        <button class="load-more-btn" style="display: none;">Load More</button>
+      </div>
+    
+      <div class="gallery-content" id="album-2" style="display: none;">
+        <h2 class="gallery-content-title">港澳 • China Pros</h2>
+        <div class="gallery-waterfall" aria-label="Photo gallery"></div>
+        <div class="loading-indicator" style="display: none;" aria-hidden="true">
+          <div class="loading-spinner"></div>
+        </div>
+        <button class="load-more-btn" style="display: none;">Load More</button>
+      </div>
+    
+      <div class="gallery-content" id="album-3" style="display: none;">
+        <h2 class="gallery-content-title">匹兹堡 • Pittsburgh</h2>
+        <div class="gallery-waterfall" aria-label="Photo gallery"></div>
+        <div class="loading-indicator" style="display: none;" aria-hidden="true">
+          <div class="loading-spinner"></div>
+        </div>
+        <button class="load-more-btn" style="display: none;">Load More</button>
+      </div>
+    
+      <div class="gallery-content" id="album-4" style="display: none;">
+        <h2 class="gallery-content-title">芝加哥 • Chicago</h2>
+        <div class="gallery-waterfall" aria-label="Photo gallery"></div>
+        <div class="loading-indicator" style="display: none;" aria-hidden="true">
+          <div class="loading-spinner"></div>
+        </div>
+        <button class="load-more-btn" style="display: none;">Load More</button>
+      </div>
+    
+  
+</section>
+
+<div class="gallery-lightbox" role="dialog" aria-label="Image lightbox">
+  <div class="lightbox-content">
+    <img src="" alt="">
+    <button class="close-lightbox" aria-label="Close lightbox">&times;</button>
+  </div>
+</div>
+
+<script>
+  var galleryData = [{"cover":"https://s2.loli.net/2024/08/14/eyMqBtAoQW42ciR.jpg","name":"库尔勒 • Korla","photos":[{"src":"https://s2.loli.net/2024/08/14/eyMqBtAoQW42ciR.jpg"},{"src":"https://s2.loli.net/2024/08/14/Yx3LNvMVSmsoiTn.jpg"},{"src":"https://s2.loli.net/2024/08/14/DH4NaQ9bxFmdRKU.jpg"},{"src":"https://s2.loli.net/2024/08/14/jzwPDHiuSlEY4GT.jpg"},{"src":"https://s2.loli.net/2024/08/14/AIyh8FdzW1J4Gjw.jpg"},{"src":"https://s2.loli.net/2024/08/14/cgfuyKhz56QoHdi.jpg"},{"src":"https://s2.loli.net/2024/08/14/E9O5KxH41FlZYzv.jpg"},{"src":"https://s2.loli.net/2024/08/14/yoKj2shrt4kAU8q.jpg"},{"src":"https://s2.loli.net/2024/08/14/TXgu7vp5Gsf6Vzw.jpg"},{"src":"https://s2.loli.net/2024/08/14/8GAJjdxNklQgXFE.jpg"},{"src":"https://s2.loli.net/2024/08/14/yfQZJu5jkP863WV.jpg"},{"src":"https://s2.loli.net/2024/08/14/7QZHsdiwjvYoTk1.jpg"},{"src":"https://s2.loli.net/2024/08/14/IQZSH3qLhCXGzi9.jpg"},{"src":"https://s2.loli.net/2024/08/14/RWjm7xeZbdQHX6P.jpg"},{"src":"https://s2.loli.net/2024/08/14/YhRZMzdx9X7OaGT.jpg"},{"src":"https://s2.loli.net/2024/08/14/Zh5rgkHEYSyVMRT.jpg"}]},{"cover":"https://s2.loli.net/2024/08/14/sZ5wKtRJfQbLAYU.jpg","name":"布诺屯 • Blono","photos":[{"src":"https://s2.loli.net/2024/08/14/VAkTyRfHvmOBeco.jpg"},{"src":"https://s2.loli.net/2024/08/14/zbMjGfKhsSpXcFu.jpg"},{"src":"https://s2.loli.net/2024/08/14/WZ4YJIltXbRVUd9.jpg"},{"src":"https://s2.loli.net/2024/08/14/WM41tkiJFVSTRgN.jpg"},{"src":"https://s2.loli.net/2024/08/14/l46mR1KqXu8ywQJ.jpg"},{"src":"https://s2.loli.net/2024/08/14/aLYmQcGwDR31zJ4.jpg"},{"src":"https://s2.loli.net/2024/08/14/lPKgCAfihJEGXz5.jpg"},{"src":"https://s2.loli.net/2024/08/14/sZ5wKtRJfQbLAYU.jpg"},{"src":"https://s2.loli.net/2024/08/14/3f2OHCpBgZ1Xdxw.jpg"},{"src":"https://s2.loli.net/2024/08/14/xikUsKudCjT7Ypa.jpg"},{"src":"https://s2.loli.net/2024/08/14/EeA7NbaGpd19xO8.jpg"},{"src":"https://s2.loli.net/2024/08/14/3zJZPxy46rNRsQV.jpg"},{"src":"https://s2.loli.net/2024/08/14/rwdTf5Dm1nsLyYp.jpg"},{"src":"https://s2.loli.net/2024/08/14/hWY76OIDEVisS2u.jpg"},{"src":"https://s2.loli.net/2024/08/14/k3QC9N6RlPgiqwh.jpg"},{"src":"https://s2.loli.net/2024/08/14/zTmeSGlNhIMu1wY.jpg"}]},{"cover":"https://s2.loli.net/2024/08/14/BW1xLzYiGXnFmAq.jpg","name":"港澳 • China Pros","photos":[{"src":"https://s2.loli.net/2024/08/14/nHabQgOcYT2pUqt.jpg"},{"src":"https://s2.loli.net/2024/08/14/yTMrp8JsgxnCzue.jpg"},{"src":"https://s2.loli.net/2024/08/14/hZxnadCEUcHle6F.jpg"},{"src":"https://s2.loli.net/2024/08/14/MXufqIx7OQdwTHZ.jpg"},{"src":"https://s2.loli.net/2024/08/14/IrvxSZOqL5cMVmP.jpg"},{"src":"https://s2.loli.net/2024/08/14/u6RPikNw3jFGdZD.jpg"},{"src":"https://s2.loli.net/2024/08/14/qsA5GMDVPIghjEd.jpg"},{"src":"https://s2.loli.net/2024/08/14/BW1xLzYiGXnFmAq.jpg"},{"src":"https://s2.loli.net/2024/08/14/R8ZVq5SGzHIkglh.jpg"},{"src":"https://s2.loli.net/2024/08/15/YWp8jaDhuiPfEXO.jpg"}]},{"cover":"https://s2.loli.net/2024/08/14/nqS3CAOUjEKluRY.jpg","name":"匹兹堡 • Pittsburgh","photos":[{"src":"https://s2.loli.net/2024/08/14/nqS3CAOUjEKluRY.jpg"},{"src":"https://s2.loli.net/2024/08/14/4XTeykYocgJ6avj.jpg"},{"src":"https://s2.loli.net/2024/08/14/qMQszCaFdR6Y4Xk.jpg"},{"src":"https://s2.loli.net/2024/08/14/1Zamx9UMCVvEKp4.jpg"},{"src":"https://s2.loli.net/2024/08/14/CMzuXbiUofcpaPT.jpg"},{"src":"https://s2.loli.net/2024/08/14/1HDurqdK7yRWxmF.jpg"},{"src":"https://s2.loli.net/2024/08/14/BIue4cLJjv8bgMZ.jpg"},{"src":"https://s2.loli.net/2024/08/14/LlVJazRdHkqT1o3.jpg"},{"src":"https://s2.loli.net/2024/08/14/2NBe7HtKrRvQcIz.jpg"},{"src":"https://s2.loli.net/2024/08/14/mky2dB6X3YbrfpA.jpg"},{"src":"https://s2.loli.net/2024/08/14/eUORjMI9NDnLlkv.jpg"},{"src":"https://s2.loli.net/2024/08/14/65ULbCzJeAtosqB.jpg"},{"src":"https://s2.loli.net/2024/08/14/xikUsKudCjT7Ypa.jpg"},{"src":"https://s2.loli.net/2024/08/14/4Vczq1IflRrUyXW.jpg"}]},{"cover":"https://s2.loli.net/2024/08/14/uMd3DtmFYZEgWae.jpg","name":"芝加哥 • Chicago","photos":[{"src":"https://s2.loli.net/2024/08/14/KPI9CA5sbJ6Zu87.jpg"},{"src":"https://s2.loli.net/2024/08/14/Tyem7g23soFE6rQ.jpg"},{"src":"https://s2.loli.net/2024/08/14/hZ6M7pxnVkbrtsN.jpg"},{"src":"https://s2.loli.net/2024/08/14/uMd3DtmFYZEgWae.jpg"},{"src":"https://s2.loli.net/2024/08/14/yRY5D7lNq3owBSm.jpg"},{"src":"https://s2.loli.net/2024/08/14/wn5HjzLV1ZhosOy.jpg"},{"src":"https://s2.loli.net/2024/08/14/mOrAWf7MdbjDYhK.jpg"},{"src":"https://s2.loli.net/2024/08/14/lPe2hjr6EwQ37nb.jpg"},{"src":"https://s2.loli.net/2024/08/14/Rx9DKnAFj1f8ghk.jpg"},{"src":"https://s2.loli.net/2024/08/14/f5yMRmw9aVxv3zu.jpg"}]}];
+</script>
+
+<script src="/js/gallery.js" defer></script>
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 张慎卿 • Zhang Shenqing | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
