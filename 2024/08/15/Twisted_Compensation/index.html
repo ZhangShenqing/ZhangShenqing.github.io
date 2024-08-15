@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+<meta name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="author" content="张慎卿 • Zhang Shenqing">
+
+
+
+
+
+<title>捆绑之下的「松弛」幻梦｜Delusions of &#39;Chill&#39; Amid Constraints | 慎卿的林中酒馆 • Scribe&#39;s Tarven</title>
+
+
+
+    <link rel="icon" href="/img/favicon.png">
+
+
+
+
+    <!-- stylesheets list from _config.yml -->
+    
+    <link rel="stylesheet" href="/css/style.css">
+    
+    <link rel="stylesheet" href="/%3Clink%20href=%22https:/cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css%22%20rel=%22stylesheet%22%3E">
+    
+
+
+
+    <!-- scripts list from _config.yml -->
+    
+    <script src="/js/script.js"></script>
+    
+    <script src="/js/tocbot.min.js"></script>
+    
+    <script src="/%3Cscript%20src=%22https:/code.jquery.com/jquery-3.7.1.min.js%22%20integrity=%22sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=%22%20crossorigin=%22anonymous%22%3E%3C/script%3E"></script>
+    
+    <script src="/%3Cscript%20src=%22https:/cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js%22%3E%3C/script%3E"></script>
+    
+    <script src="/js/gallery.js"></script>
+    
+
+
+
+    
+    
+        
+    
+
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+    <script>
+        // this function is used to check current theme before page loaded.
+        (() => {
+            const currentTheme = window.localStorage && window.localStorage.getItem('theme') || '';
+            const isDark = currentTheme === 'dark';
+            const pagebody = document.getElementsByTagName('body')[0]
+            if (isDark) {
+                pagebody.classList.add('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Dark"
+            } else {
+                pagebody.classList.remove('dark-theme');
+                // mobile
+                document.getElementById("mobile-toggle-theme").innerText = "· Light"
+            }
+        })();
+    </script>
+
+    <div class="wrapper">
+        <header>
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-header header-logo"><a href="/">慎卿的林中酒馆 • Scribe&#39;s Tavern</a></div>
+            <div class="menu navbar-right">
+                
+                    <a class="menu-item" href="/archives">博文｜Posts</a>
+                
+                    <a class="menu-item" href="/project">项目｜Projects</a>
+                
+                    <a class="menu-item" href="/gallery">相册｜Gallery</a>
+                
+                    <a class="menu-item" href="/about">关于我｜About me</a>
+                
+                <input id="switch_default" type="checkbox" class="switch_default">
+                <label for="switch_default" class="toggleBtn"></label>
+            </div>
+        </div>
+    </nav>
+
+    
+    <nav class="navbar-mobile" id="nav-mobile">
+        <div class="container">
+            <div class="navbar-header">
+                <div>
+                    <a href="/">慎卿的林中酒馆 • Scribe&#39;s Tavern</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+                </div>
+                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
+            </div>
+            <div class="menu" id="mobile-menu">
+                
+                    <a class="menu-item" href="/archives">博文｜Posts</a>
+                
+                    <a class="menu-item" href="/project">项目｜Projects</a>
+                
+                    <a class="menu-item" href="/gallery">相册｜Gallery</a>
+                
+                    <a class="menu-item" href="/about">关于我｜About me</a>
+                
+            </div>
+        </div>
+    </nav>
+
+</header>
+<script>
+    var mobileBtn = function f() {
+        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
+        var mobileMenu = document.getElementById("mobile-menu");
+        if(toggleMenu.classList.contains("active")){
+           toggleMenu.classList.remove("active")
+            mobileMenu.classList.remove("active")
+        }else{
+            toggleMenu.classList.add("active")
+            mobileMenu.classList.add("active")
+        }
+    }
+</script>
+            <div class="main">
+                <div class="container">
+    
+    
+        <div class="post-toc">
+    <div class="tocbot-list">
+    </div>
+    <div class="tocbot-list-menu">
+        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
+        <a onclick="go_top()">Back to top</a>
+        <a onclick="go_bottom()">Go to bottom</a>
+    </div>
+</div>
+
+<script>
+    var tocbot_timer;
+    var DEPTH_MAX = 6; // 为 6 时展开所有
+    var tocbot_default_config = {
+        tocSelector: '.tocbot-list',
+        contentSelector: '.post-content',
+        headingSelector: 'h1, h2, h3, h4, h5',
+        orderedList: false,
+        scrollSmooth: true,
+        onClick: extend_click,
+    };
+
+    function extend_click() {
+        clearTimeout(tocbot_timer);
+        tocbot_timer = setTimeout(function() {
+            tocbot.refresh(obj_merge(tocbot_default_config, {
+                hasInnerContainers: true
+            }));
+        }, 420); // 这个值是由 tocbot 源码里定义的 scrollSmoothDuration 得来的
+    }
+
+    document.ready(function() {
+        tocbot.init(obj_merge(tocbot_default_config, {
+            collapseDepth: 1
+        }));
+    });
+
+    function expand_toc() {
+        var b = document.querySelector('.tocbot-toc-expand');
+        var expanded = b.getAttribute('data-expanded');
+        expanded ? b.removeAttribute('data-expanded') : b.setAttribute('data-expanded', true);
+        tocbot.refresh(obj_merge(tocbot_default_config, {
+            collapseDepth: expanded ? 1 : DEPTH_MAX
+        }));
+        b.innerText = expanded ? 'Expand all' : 'Collapse all';
+    }
+
+    function go_top() {
+        window.scrollTo(0, 0);
+    }
+
+    function go_bottom() {
+        window.scrollTo(0, document.body.scrollHeight);
+    }
+
+    function obj_merge(target, source) {
+        for (var item in source) {
+            if (source.hasOwnProperty(item)) {
+                target[item] = source[item];
+            }
+        }
+        return target;
+    }
+</script>
+    
+
+    
+    <article class="post-wrap">
+        <header class="post-header">
+            <h1 class="post-title">捆绑之下的「松弛」幻梦｜Delusions of &#39;Chill&#39; Amid Constraints</h1>
+            
+        </header>
+
+        <div class="post-content">
+            <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/css/lightgallery.min.css" /><div class=".article-gallery"><h4 id="「向往」是一种投向虚空的欲望，没有承载主体，于是最后只能落在空洞的符号上。-“Longing”-is-a-desire-cast-into-the-void-landing-on-hollow-symbols"><a href="#「向往」是一种投向虚空的欲望，没有承载主体，于是最后只能落在空洞的符号上。-“Longing”-is-a-desire-cast-into-the-void-landing-on-hollow-symbols" class="headerlink" title="「向往」是一种投向虚空的欲望，没有承载主体，于是最后只能落在空洞的符号上。*“Longing” is a desire cast into the void, landing on hollow symbols."></a>「向往」是一种投向虚空的欲望，没有承载主体，于是最后只能落在空洞的符号上。<br><span style="color:#b1262d; margin-right: 5px;">*</span>“Longing” is a desire cast into the void, landing on hollow symbols.</h4><blockquote class="pullquote left"><p><a href="/img/chill_trend.jpeg" data-fancybox="images" data-caption="主人没有描述我哦~"><a href="/img/chill_trend.jpeg" class="gallery-item"><img src="/img/chill_trend.jpeg" /></a></a></p>
+<div style="text-align: center; font-size: 0.84em; margin-top: 10px; letter-spacing: 0.78px;">
+  香港01报道 • HK01 On "Chill" Trend
+</div></blockquote>
+<br>
+不知道从什么时候开始，「松弛感」这个词在中文互联网舆论上诡异地从对灵魂有的放矢的形容，变成了一个对景观符号簇拥的时尚单品。我们很难不重新思考一个问题：当我们探讨「松弛感」时，我们究竟在谈论什么？
+
+<p>It’s unclear when exactly the term “chill vibe” transformed from a meaningful description of the soul into a trendy accessory embraced by aesthetic symbols in the Chinese internet discourse. We are compelled to reconsider a fundamental question: What are we really talking about when we discuss this “chill vibe”?</p>
+<p>探讨「松弛感」本质上是关于个人与自我之间的对话，但是其在现代社会的「景观化」中逐渐失去内核。</p>
+<p>Discussing the “chill vibe” is fundamentally about the dialogue between the individual and the self, yet in modern society, it gradually loses its essence through its transformation into a spectacle.</p>
+<p>如果你在中文互联网上多留心，会发现「松弛感」被提及最多的场域，通常为图片分享平台，而涉及「松弛感」的内容，却往往充斥着「低生活，高消费」的，在社会生产关系中凝视下位者的消费行为。</p>
+<p>If you pay close attention on the Chinese internet, you’ll find that the “chill vibe” is most frequently mentioned on image-sharing platforms. Yet, content associated with this term is often laden with behaviors of “low-key living, high consumption,” a kind of consumerism that gazes down on those lower in the social hierarchy.</p>
+<p>因此我们很容易得到一个具有悲观色彩的观察结果，即「松弛感」本应是抵抗过度焦虑和消费主义的态度，但如今却成为消费的另一种面具。这种松弛感的本质，并非是对现代生活紧绷状态的有效解答，而更像是一种精心包装后的商品。这种商品化的「松弛」，不过是新一轮焦虑的变种，是在过度修饰的景观中迷失的另一种形式。</p>
+<p>It’s easy to draw a pessimistic conclusion: the “chill vibe” was supposed to be an attitude resisting excessive anxiety and consumerism, yet it has now become another mask for consumption. The essence of this chill vibe is not an effective response to the tension of modern life but rather a carefully packaged commodity. This commodified “chill vibe” is merely a new variant of anxiety, another form lost within an overly curated spectacle.</p>
+<p>这样的焦虑事实上暗含着一种隐形自恋的虚伪，通过在具体行为上的自贬达到精神上对他者的凝视，并以自身为载体（或者说一种商品展柜），借由承载大量的审美符号，景观符号和消费符号，实现对他者的全然凌驾，而获得满足感。</p>
+<p>This kind of anxiety actually contains a hidden narcissistic hypocrisy. Through self-deprecation in specific behaviors, one achieves a mental gaze over others and uses oneself as a vessel (or a showcase) to carry a plethora of aesthetic, symbolic, and consumerist elements, thereby gaining a sense of superiority over others and deriving satisfaction.</p>
+<p>符号堆砌出的「松弛感」，看似随性，实则充满了精致计算。从色调的选择到语言的表达，背后都是精心策划的焦虑。你以为是在逃避压力，殊不知自己早已被新的压力裹挟，最终沦为「松弛感景观」中的一部分。社交媒体上的「松弛感」，逐渐成为一种新的货币。那些看似随意的日常分享，背后却是经过无数次过滤、精挑细选的展示。这种展示本质上是一种炫耀——「松弛感」本身不再是个人的内在状态，而变成了能够被货币化、可量化的社交资本。</p>
+<p>The “chill vibe” constructed from layers of symbols appears effortless but is, in fact, meticulously calculated. From color selection to language expression, everything is driven by carefully orchestrated anxiety. You think you’re escaping pressure, yet unknowingly, you’ve already been caught up in new pressures, ultimately becoming just another part of the “chill vibe spectacle.” On social media, the “chill vibe” has gradually turned into a new form of currency. Those seemingly casual daily posts are, in reality, filtered and carefully curated displays. This kind of display is essentially a form of boasting—the “chill vibe” is no longer an internal state of being but has become something that can be monetized and quantified as social capital.</p>
+<p>在追求「松弛」的表象之下，真正的焦虑与社会问题被无声掩埋。我们逐渐遗忘，「松弛感」本应是对生活的豁达与从容，而不是被修饰过后的虚假状态。当一切都被装点成精致的幻梦时，真正的自由和宁静，或许正在离我们远去。</p>
+<p>Beneath the surface pursuit of the “chill vibe,” true anxieties and social issues are quietly buried. We gradually forget that the “chill vibe” should be about embracing life with grace and ease, not about crafting a polished, false facade. As everything is adorned into an exquisite illusion, genuine freedom and tranquility may be slipping further away from us.</p>
+<p>本质上来说，人们成为这种虚假的「松弛感」的拥趸的行为，是一种病态的心理代偿。</p>
+<p>Essentially, the act of people becoming devotees of this false “chill vibe” is a twisted psychological compensation.</p>
+</div><script src="https://cdn.jsdelivr.net/lightgallery.js/1.0.1/js/lightgallery.min.js"></script><script>if (typeof lightGallery !== 'undefined') {
+        var options = {
+            selector: '.gallery-item'
+        };
+        lightGallery(document.getElementsByClassName('.article-gallery')[0], options);
+        }</script>
+        </div>
+
+        
+        <section class="post-tags">
+            <div>
+                <span>Tag(s):</span>
+                <span class="tag">
+                    
+                    
+                        <a href="/tags/%E8%AF%84%E8%AE%BACommentary/"># 评论Commentary</a>
+                    
+                        
+                </span>
+            </div>
+            <div>
+                <a href="javascript:window.history.back();">back</a>
+                <span>· </span>
+                <a href="/">home</a>
+            </div>
+        </section>
+        <section class="post-nav">
+            
+                <a class="prev" rel="prev" href="/2024/08/15/BlackOut_1/">「Black Out」• 一｜"Black Out" • Chapter 1</a>
+            
+            
+            <a class="next" rel="next" href="/2024/08/13/BlackOut_Prologue/">「Black Out」• 序｜"Black Out" • Prologue</a>
+            
+        </section>
+
+
+    </article>
+</div>
+
+            </div>
+            <footer id="footer" class="footer">
+    <div class="copyright">
+        <span>© 张慎卿 • Zhang Shenqing | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
+    </div>
+</footer>
+
+    </div>
+</body>
+
+</html>
