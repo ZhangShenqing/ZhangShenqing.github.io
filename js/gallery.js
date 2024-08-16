@@ -70,9 +70,16 @@ $(document).ready(function() {
     });
 
     function openLightbox(src) {
-        if (src) { // 添加检查确保 src 不为空
-            $('#lightbox').show();
-            $('#lightbox-img').attr('src', src);
+        if (src) {
+            const $lightboxImg = $('#lightbox-img');
+            $lightboxImg.attr('src', src);
+
+            // 等待图片加载完成再显示灯箱
+            $lightboxImg.on('load', function() {
+                $('#lightbox').fadeIn(); // 使用 fadeIn 避免闪烁
+            }).on('error', function() {
+                console.error("图片加载失败");
+            });
         }
     }
 
