@@ -1371,6 +1371,10 @@ header label {
 .post-content pre .javascript .function {
   color: #8959a8;
 }
+.gt-container {
+  max-width: 780px;
+  margin: auto;
+}
 @font-face {
   font-family: "iconfont"; /* Project id  */
   src: url('iconfont.ttf?t=1723416630674') format('truetype');
