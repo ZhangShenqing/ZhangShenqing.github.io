@@ -6,7 +6,7 @@ $(document).ready(function() {
     function loadMoreItems($waterfall, albumData) {
         const remainingItems = albumData.photos.length - loadedItems;
         const itemsToLoad = Math.min(ITEMS_PER_LOAD, remainingItems);
-        
+
         for (let i = loadedItems; i < loadedItems + itemsToLoad; i++) {
             const photo = albumData.photos[i];
             const $item = $('<div class="gallery-item"><img src="' + photo.src + '" alt="' + photo.alt + '"></div>');
@@ -14,7 +14,7 @@ $(document).ready(function() {
         }
 
         loadedItems += itemsToLoad;
-        
+
         if (loadedItems >= albumData.photos.length) {
             $('#load-more').hide();
         } else {
@@ -60,7 +60,7 @@ $(document).ready(function() {
             loadMoreItems($waterfall, albumData);
         }
     });
-    
+
     // 灯箱功能实现
     $(document).on('click', '.gallery-item img', function() {
         const src = $(this).attr('src');
@@ -76,7 +76,7 @@ $(document).ready(function() {
 
             // 等待图片加载完成再显示灯箱
             $lightboxImg.on('load', function() {
-                $('#lightbox').fadeIn(); // 使用 fadeIn 避免闪烁
+                $('#lightbox').css('display', 'flex').fadeIn(); // 切换为 display: flex 并使用 fadeIn 避免闪烁
             }).on('error', function() {
                 console.error("图片加载失败");
             });
@@ -84,7 +84,7 @@ $(document).ready(function() {
     }
 
     $('#lightbox').click(function() {
-        $(this).hide();
+        $(this).fadeOut();
     });
 
     // 初始化时确保灯箱隐藏
